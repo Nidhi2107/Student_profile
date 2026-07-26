@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Personal Profile Section -->
+        <section class="profile-section">
+            <h2>Personal Profile</h2>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="ph.jpg" alt="Profile picture of Nidhi Singh Chauhan" onerror="this.style.display='none'">
+                </div>
+                <div class="profile-text">
+                    <h3>Nidhi Singh Chauhan</h3>
+                    <p><strong>Role:</strong> Web Development Student</p>
+                    <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh</p>
+                    <p><strong>Bio:</strong> I am a passionate student pursuing a degree in Computer Science with a focus on web development. I love creating beautiful and functional websites that solve real-world problems.</p>
+                    <div class="profile-links">
+                        <p><strong>Connect with me:</strong></p>
+                        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Timetable Section -->
+        <section class="timetable-section">
+            <h2>Weekly Timetable</h2>
+            <table>
+                <caption>My weekly class schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">9:00 AM</th>
+                        <td>Web Development</td>
+                        <td>Database Systems</td>
+                        <td>Web Development</td>
+                        <td>Algorithms</td>
+                        <td>Database Systems</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00 AM</th>
+                        <td>Database Systems</td>
+                        <td>Web Development</td>
+                        <td>Algorithms</td>
+                        <td>Web Development</td>
+                        <td>Algorithms</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00 AM</th>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:00 PM</th>
+                        <td>Algorithms</td>
+                        <td>UI/UX Design</td>
+                        <td>Database Systems</td>
+                        <td>UI/UX Design</td>
+                        <td>Project Work</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1:00 PM</th>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2:00 PM</th>
+                        <td>UI/UX Design</td>
+                        <td>Project Work</td>
+                        <td>UI/UX Design</td>
+                        <td>Project Work</td>
+                        <td>Free Time</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="form-section">
+            <h2>Course Registration Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Course Preference:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="webdev" name="course" value="webdev" required>
+                        <label for="webdev">Web Development</label>
+
+                        <input type="radio" id="datascience" name="course" value="datascience">
+                        <label for="datascience">Data Science</label>
+
+                        <input type="radio" id="mobile" name="course" value="mobile">
+                        <label for="mobile">Mobile Development</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Skills (select all that apply):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="html" name="skills" value="html">
+                        <label for="html">HTML</label>
+
+                        <input type="checkbox" id="css" name="skills" value="css">
+                        <label for="css">CSS</label>
+
+                        <input type="checkbox" id="javascript" name="skills" value="javascript">
+                        <label for="javascript">JavaScript</label>
+
+                        <input type="checkbox" id="python" name="skills" value="python">
+                        <label for="python">Python</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section">
+            <h2>Media Content</h2>
+            
+            <div class="media-item">
+                <h3>Tech Tutorial: Web Development Basics</h3>
+                <video controls width="100%" poster="https://via.placeholder.com/800x450/764ba2/ffffff?text=Web+Development+Tutorial">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm">
+                    <track src="tech-captions.vtt" kind="captions" srclang="en" label="English captions">
+                    <p>Your browser doesn't support HTML5 video. <a href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">Download the video</a> instead.</p>
+                </video>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Note: This is a sample tech video. Replace with your own tech-tutorial.mp4 file.</p>
+            </div>
+
+            <div class="media-item">
+                <h3>Tech Podcast: Web Development Trends</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/ogg">
+                    <p>Your browser doesn't support HTML5 audio. <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Download the audio</a> instead.</p>
+                </audio>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Note: This is a sample tech podcast. Replace with your own tech-podcast.mp3 file.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Portfolio. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>
